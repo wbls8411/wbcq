@@ -5,10 +5,6 @@ spring:
     name: USER-HYSTRIX-PROVIDER
   profiles:
     active: dev
-eureka:
-  client:
-    service-url:
-     defaultZone: http://localhost:7001/eureka
 ---
 server:
   port: 8002
@@ -16,10 +12,6 @@ spring:
   application:
     name: USER-HYSTRIX-PROVIDER
   profiles: test
-eureka:
-  client:
-    service-url:
-     defaultZone: http://localhost:7001/eureka
 ---
 server:
   port: 8003
@@ -27,7 +19,4 @@ spring:
   application:
     name: USER-HYSTRIX-PROVIDER
   profiles: hh
-eureka:
-  client:
-    service-url:
-     defaultZone: http://localhost:7001/eureka
+
